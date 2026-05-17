@@ -1,0 +1,78 @@
+.row {
+  margin-left: 4%;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.row h2 {
+  font-size: 1.4vw;
+  color: #e5e5e5;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  transition: color 0.2s;
+}
+
+.row h2:hover {
+  color: white;
+}
+
+.row-posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px 0;
+  gap: 15px;
+}
+
+.row-poster {
+  max-height: 150px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.row-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 450ms;
+  cursor: pointer;
+  width: max-content;
+}
+
+.row-item:hover {
+  transform: scale(1.08);
+  z-index: 10;
+}
+
+.row-movie-title {
+  font-size: 0.8rem;
+  color: #e5e5e5;
+  margin-top: 8px;
+  text-align: center;
+  max-width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.row-posterLarge {
+  max-height: 250px;
+}
+
+.row-item:hover .row-posterLarge {
+  transform: scale(1.01);
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .row h2 {
+    font-size: 1.2rem;
+  }
+  .row-poster {
+    max-height: 100px;
+  }
+  .row-posterLarge {
+    max-height: 180px;
+  }
+}
