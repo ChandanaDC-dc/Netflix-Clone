@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_KEY = '93dcf6858abad8cb9dd07e52b9e9e59f';
+const API_KEY = 'YOUR-API-KEY';
 
 const instance = axios.create({
   baseURL: 'https://api.themoviedb.org/3',
